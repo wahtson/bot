@@ -1,14 +1,11 @@
 {
-  "name": "wahtson",
+  "name": "@wahtson/bot",
   "description": "highly configurable discord bot",
   "version": "2.1.0",
   "bin": "bin/wahtson.js",
   "license": "GPL-3.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nanaian/wahtson.git"
-  },
-  "homepage": "https://github.com/nanaian/wahtson",
+  "repository": "git://github.com/wahtson/bot.git",
+  "homepage": "https://wahtson.js.org",
   "main": "src/bot.js",
   "scripts": {
     "start": "node .",
