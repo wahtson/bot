@@ -1,7 +1,7 @@
 {
   "name": "@wahtson/bot",
   "description": "highly configurable discord bot",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "bin": "bin/wahtson.js",
   "license": "GPL-3.0",
   "repository": "git://github.com/wahtson/bot.git",
