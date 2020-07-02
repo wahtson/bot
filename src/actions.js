@@ -239,7 +239,7 @@ module.exports = {
             return cat.toLowerCase().startsWith(opts.getText('page').toLowerCase())
         })
 
-        if (typeof catPage == 'undefined') {
+        if (typeof catPage == 'undefined' || opts.getText('page') == "") {
             source.channel.send({
                 embed: {
                     title: 'Categories',
