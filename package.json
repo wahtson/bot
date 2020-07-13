@@ -3,7 +3,7 @@
   "description": "highly configurable discord bot",
   "version": "2.2.1",
   "bin": {
-    "wahtson-bot": "bin/wahtson.js"
+    "wahtson": "bin/wahtson.js"
   },
   "license": "GPL-3.0",
   "repository": {
