@@ -308,7 +308,7 @@ const timeDiffString = (first, last) => {
             str = 'minute'
             amount = Math.round(diff / CONV.MINUTE)
             break
-        case diff >= CONV.SECOND:
+        default:
             str = 'second'
             amount = Math.round(diff / CONV.SECOND)
             break

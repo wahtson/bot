@@ -424,8 +424,8 @@ module.exports = class Bot extends EventEmitter {
                 for (let i = 0; i < Object.keys(action.modifiers).length; i++) {
                     let mod = action.modifiers[Object.keys(action.modifiers)[i]]
 
-                    if (await userHasItem(source.member.id, mod.item, db)) {
-                        for (key in mod.options) {
+                    if (await userHasItem(source.member.id, mod.item, this.db)) {
+                        for (let key in mod.options) {
                             action[key] = mod.options[key]
                         }
                     }
