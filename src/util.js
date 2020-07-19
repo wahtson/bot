@@ -69,7 +69,7 @@ const attachmentType = a =>
         mp4: 'video',
         mov: 'video',
         webm: 'video',
-    }[fileExtension(a.url)])
+    }[fileExtension(a.url).toLowerCase()])
 
 const fileExtension = url => {
     if (!url) return
