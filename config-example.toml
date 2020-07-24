@@ -1,4 +1,4 @@
-# See https://github.com/nanaian/wahtson/wiki/config.toml for documentation.
+# See https://wahtson.js.org for documentation.
 
 # Core bot options.
 bot_token = ""

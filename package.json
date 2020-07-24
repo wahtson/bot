@@ -13,7 +13,7 @@
   "homepage": "https://wahtson.js.org",
   "main": "src/bot.js",
   "scripts": {
-    "start": "node .",
+    "start": "node bin/wahtson.js",
     "lint": "prettier --single-quote --trailing-comma all --no-semi --arrow-parens avoid --print-width 100 --tab-width 4 --write src/**/*.js bin/**/*.js"
   },
   "dependencies": {

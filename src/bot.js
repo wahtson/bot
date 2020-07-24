@@ -21,6 +21,7 @@ const conditionFunctions = require('./conditions.js')
 const { version } = require('../package.json')
 
 const EventEmitter = require('events')
+const { isArray } = require('util')
 
 module.exports = class Bot extends EventEmitter {
     static get logLevel() {
@@ -352,7 +353,11 @@ module.exports = class Bot extends EventEmitter {
     }
 
     async parseMessage(msg) {
-        const prefix = await this.config.get('command_prefix')
+        let prefix = await this.config.get('command_prefix')
+
+        if(isArray(prefix)) {
+            prefix = prefix.filter(p => msg.content.startsWith(p))[0]
+        }
 
         let substring
         if (msg.content.startsWith(prefix)) {
