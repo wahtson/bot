@@ -76,7 +76,7 @@ module.exports = {
                 action[key] = JSON.parse(
                     await replacePlaceholders(JSON.stringify(value), placeholders),
                 )
-            else action[key] = await replacePlaceholders(value, placeholders)
+            else action[key] = await replacePlaceholders(String(value), placeholders)
         }
 
         return now - lastUsed > timeRequired

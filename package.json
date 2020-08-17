@@ -1,7 +1,7 @@
 {
   "name": "wahtson",
   "description": "highly configurable discord bot",
-  "version": "2.2.5",
+  "version": "2.2.6",
   "bin": {
     "wahtson": "bin/wahtson.js"
   },

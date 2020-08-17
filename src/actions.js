@@ -208,7 +208,8 @@ module.exports = {
             source.member.id,
         )
 
-        if (opts.has('text')) {
+
+        if (await opts.has('text')) {
             source.channel.send(replacePlaceholders(opts.getText('text'), placeholders))
         }
     },
